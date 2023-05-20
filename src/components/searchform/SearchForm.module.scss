@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  .SearchForm {
+    // display: flex;
+    // justify-content: center;
+
+    width: 40rem;
+    height: 8rem;
+    background-color: #ffffff;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    .searchBar {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.7rem 0;
+      border-bottom: 2px solid #247f8f;
+      .searchInput {
+        width: 25rem;
+        font-size: 1.2rem;
+        margin: 0.5rem 1rem 1rem 0.5rem;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      .searchLogo {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        svg {
+          fill: rgb(163, 157, 157);
+        }
+      }
+    }
+    .btn {
+      position: relative;
+      display: flex;
+      justify-content: end;
+      gap: 1rem;
+      margin-right: 2rem;
+      margin-top: 1rem;
+      .btnClose {
+        position: absolute;
+        left: 1rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: rgb(104, 166, 139);
+        border-radius: 3px;
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(104, 166, 139, 0.5);
+        }
+      }
+      .btnReset {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: white;
+        border-radius: 3px;
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(212, 208, 208, 0.5);
+        }
+      }
+      .btnSearch {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #00bbec;
+        border-radius: 3px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(19, 167, 204, 0.8);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .SearchForm {
+      width: 30rem;
+      height: 8rem;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    .SearchForm {
+      width: 80%;
+      height: 8rem;
+      .btnClose {
+        padding: 0.5rem 0.3rem !important;
+      }
+      .btnSearch {
+        padding: 0.5rem 0.3rem !important;
+      }
+    }
+  }
+}

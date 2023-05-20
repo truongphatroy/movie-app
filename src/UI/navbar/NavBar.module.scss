@@ -1,0 +1,42 @@
+.NavBarWrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: aliceblue;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: transparent;
+  // border-bottom: 1px solid #000;
+  z-index: 99;
+
+  .logo {
+    font-size: 1.7rem;
+    font-weight: 600;
+    a {
+      color: rgba(229, 4, 4, 0.963);
+      &:hover {
+        color: rgba(224, 88, 88, 0.963);
+      }
+    }
+  }
+
+  .searchBar {
+    width: 2rem;
+    height: 2rem;
+
+    svg {
+      &:hover {
+        fill: rgb(243, 247, 250);
+      }
+    }
+  }
+}
+
+.NavBarWrapperCroll {
+  background-color: #000;
+}
