@@ -1,0 +1,4 @@
+html,
+body {
+  overflow-x: hidden; /* để ngăn chặn thanh cuộn ngang xuất hiện */
+}

@@ -1,5 +1,6 @@
 {
   "name": "react-clone",
+  "homepage": "https://truongphatroy.github.io/movie-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.1",
+    "gh-pages": "^5.0.0",
     "movie-trailer": "^2.0.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -15,13 +17,16 @@
     "react-slick": "^0.29.0",
     "react-youtube": "^7.11.3",
     "sass": "^1.60.0",
+    "save-dev": "^0.0.1-security",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
